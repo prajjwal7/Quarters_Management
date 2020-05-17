@@ -1,0 +1,80 @@
+* {
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+}
+body {
+  background-image: url("fpage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heading {
+    width: 100%;
+    text-align:center;
+    font-size: 3em;
+    margin-top: 10vh;
+    font-family: serif;
+    color: white;
+}
+
+.heading .smallText {
+  font-size: 0.7em;
+  color: black;
+}
+
+.LS {
+    margin-top:5vh;
+    display: grid;
+    grid-template-columns:1.5fr 1fr 1fr 1.5fr;
+}
+
+.LS button{
+    border: none;
+    background:none;
+}
+
+.LS .half {
+    font-size: 1.5em;
+    border: none;
+    height: 2em;
+    color: white;
+    background-color: rgba(10,10,150,0.6);
+    border-bottom:solid 2px gray;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+
+form {
+    width:300px;
+    margin:auto;
+    margin-top:5vh;
+}
+
+form input{
+    padding-left:20px;
+    margin-bottom:2vh;
+    width: 300px;
+    border:none;
+    border-radius:5px;
+    border:solid 1px rgb(100, 85, 85);
+    height:3em;
+}
+
+form button {
+    color:white;
+    border:none;
+    height:3em;
+    width:140px;
+    border-radius:5px;
+    background-color: rgb(0,0,200,0.8);
+}
+
+.signUp {
+  display: none;
+}
+
+.error {
+  font-size: 12px;
+  color : red;
+}

@@ -17,14 +17,19 @@
   }
 
   if($reg && $password) {
-      $query = "SELECT Name,ID,Password FROM users WHERE ID='$reg'";
+      $query = "SELECT Name,ID,Password,RoomNo FROM users WHERE ID='$reg'";
       $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
 
       if(mysqli_num_rows($result) > 0) {
         $row = mysqli_fetch_assoc($result);
         if($row["Password"] == $password){
           $_SESSION['un'] = $row['Name'];
-          header("location:guestLoggedIn.php");
+          $_SESSION['id'] = $row['ID'];
+          if($row['RoomNo'] == -1) {
+            header("location:guestNotBookedLoggedIn.php");
+          } else {
+            header("location:guestLoggedIn.php");
+          }
         }
         else {
           $Lpasserror = "Wrong Password.<br>";

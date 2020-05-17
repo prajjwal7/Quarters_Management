@@ -65,8 +65,8 @@
                     <option value="Ad-Hoc">
                     <option value="Associate Professor">
                     <option value="Assistant Professor">
-                    <option value="College Management Staff">
-                    <option value="Head Of Dept.">
+                    <option value="Management Staff">
+                    <option value="HOD">
                 </datalist>
             </div>
             <div class="field">

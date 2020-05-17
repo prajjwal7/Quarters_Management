@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background: url("fpage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background-color: rgba(10,10,150,0.6);
+}
+
+ul {
+  display: grid;
+  grid-template-columns:8fr 1fr 1fr 1fr;
+  list-style: none;
+}
+
+li {
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  padding: 5px;
+  color: white;
+}
+
+li span {
+  margin-left: 30px;
+  float: left;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  width: 100px;
+  height: 1.5em;
+  background: none;
+  color: white;
+  font-size: 0.9em;
+  border: none;
+}
+
+.bookAQuarter {
+  width: 100%;
+  margin: auto;
+  margin-top: 30vh;
+  text-align: center;
+  background-color: rgba(10,10,150,0.6);
+  padding: 40px;
+}
+
+.bookAQuarter .hello {
+  font-size: 3em;
+  color: white;
+  font-weight: 500;
+}
+
+.bookAQuarter .nobook {
+  font-size: 1.5em;
+  color: white;
+  font-weight: 300;
+}
+
+.bookAQuarter .book {
+  font-size: 2em;
+  color: white;
+  font-weight: 400;
+}
+
+.bookAQuarter button  {
+  margin-top: 6vh;
+  background-color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  width: 150px;
+  height: 2em;
+  border-radius: 5px;
+  line-height: 1em;
+
+}
+.bookAQuarter button a {
+  color: rgba(10,10,150,0.6);
+}

@@ -1,0 +1,40 @@
+body {
+  background: rgba(10,10,150,0.6);
+}
+
+.confirm {
+  margin: auto;
+  width: 30%;
+  margin-top: 30vh;
+  background: rgba(255,255,255,0.8);
+  padding: 50px;
+  border-top-left-radius: 50px;
+  text-align: center;
+}
+.please {
+  font-size: 2em;
+  font-weight: 500;
+  color: rgba(10,10,150,0.6);
+}
+
+.roomNo {
+    font-size: 3em;
+    font-weight: 600;
+    color: rgba(10,10,150,0.8);
+}
+
+button {
+  margin-top: 5vh;
+  margin-right: 5vh;
+  width: 150px;
+  height: 2em;
+  font-size: 1em;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background: rgba(10,150,10,0.8);
+}
+
+.cancel {
+  background: rgba(150,10,10,0.8);
+}

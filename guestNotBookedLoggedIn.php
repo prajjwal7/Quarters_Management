@@ -40,7 +40,6 @@
       <ul>
         <li><span>Welcome, <?php echo $_SESSION['un']; ?></span></li>
         <li><a href="#CompleteAvailablility" name="avail" value="<?php echo $_SESSION['id']; ?>">Availability</a></li>
-        <li><a href="pending.php">Complaint</a></li>
         <li><a href="logout.php">Log Out</a></li>
       </ul>
     </header>

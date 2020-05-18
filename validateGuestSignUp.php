@@ -65,8 +65,9 @@
   if($reg && $name && $cadre && $branch && $email && $phone && $password) {
     $query = "INSERT INTO users VALUES('$reg', '$name',  '$email', '$phone', '$branch',  '$cadre', -1, -1, current_timestamp, '$password', -1)";
     if(mysqli_query($conn, $query)) {
-      $_SESSION['un'] = $name ;
-      header('location:guestLoggedIn.php');
+      $_SESSION['un'] = $name;
+      $_SESSION['id'] = $reg;
+      header('location:guestNotBookedLoggedIn.php');
     } else {
       die(mysqli_error($conn));
     }

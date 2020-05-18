@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background: url("fpage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.a {
+    text-decoration: none;
+}
+
+header {
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background-color: rgba(10,10,150,0.6);
+}
+
+ul {
+  display: grid;
+  grid-template-columns:8fr 1.3fr 1fr 1fr;
+  list-style: none;
+}
+
+li {
+  cursor:pointer;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  padding: 5px;
+  color: white;
+}
+
+li span {
+  margin-left: 30px;
+  float: left;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+li a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  width: 100px;
+  height: 1.5em;
+  background: none;
+  color: white;
+  font-size: 0.9em;
+  border: none;
+}
+
+.AllDetails {
+  width: 50%;
+  margin: auto;
+  margin-top: 30vh;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.AllDetails button {
+  margin: 2vh;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 2em;
+  background: rgba(10,10,150,0.6);
+}
+
+.Details {
+  width: 100%;
+  border-radius: 20px;
+  margin-left: 2vh;
+  text-align: center;
+  background: white;
+  padding: 50px;
+}
+
+.Details span{
+  font-size: 2em;
+  font-weight: 600;
+  color: rgba(10,10,150,0.6);
+}
+
+.BillsDetail {
+  width: 100%;
+  border-radius: 20px;
+  margin-left: 2vh;
+  text-align: center;
+  background: white;
+  padding: 50px;
+}
+
+.BillsDetail span{
+  font-size: 2em;
+  font-weight: 600;
+  color: rgba(10,10,150,0.6);
+}
+
+.Cstatus {
+  width: 100%;
+  border-radius: 20px;
+  margin-left: 2vh;
+  margin-bottom: 10vh;
+  text-align: center;
+  background: white;
+  padding: 50px;
+}
+
+      #title{
+          font-size:x-large;
+      }
+
+
+      .container {
+        padding: 3rem;
+        margin-top: 6rem;
+          background-color: rgba(221, 221, 221, 0.5);
+          margin-bottom: 20px;
+          position:center;
+      }
+
+      .ddbut-con {
+          text-align: right;
+      }
+
+      @media (max-width: 768px){
+          .table1-container {
+              overflow-x: scroll;
+          }
+          .ddbut-con {
+              text-align: left;
+          }
+      }

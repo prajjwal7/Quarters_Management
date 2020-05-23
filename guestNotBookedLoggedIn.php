@@ -10,7 +10,7 @@
     case 'HOD':
       $beds = 1;
       break;
-    case 'Assosiate Professor':
+    case 'Associate Professor':
       $beds = 1;
       break;
     case 'Assistant Professor':
@@ -26,6 +26,12 @@
       $beds = 0;
       break;
   }
+
+    if(isset($_POST['bookRoomButton'])) {
+      $_SESSION['room'] = $_POST['bookRoomButton'];
+      header("location:bookRoom.php");
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">

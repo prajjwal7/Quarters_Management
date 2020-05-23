@@ -10,7 +10,7 @@
       while($row = mysqli_fetch_assoc($result)) {
           ?>
           <div class="Rooms">
-            <span><form action="bookRoom.php" method="post" name="bookForm"><button class="roomNo" name="bookRoomButton" value="<?php echo $row['RoomNo']; ?>"><?php echo $row['RoomNo']; ?></button></form></span>
+            <span><form action="" method="post" name="bookForm"><button class="roomNo" name="bookRoomButton" value="<?php echo $row['RoomNo']; ?>"><?php echo $row['RoomNo']; ?></button></form></span>
           </div>
           <?php
       }

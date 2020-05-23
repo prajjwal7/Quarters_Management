@@ -1,7 +1,7 @@
 <?php
    session_start();
+   $room = $_SESSION['room'];
    $id = $_SESSION['id'];
-   $room = $_POST['bookRoomButton'];
    if(isset($_POST['confirmButton'])) {
      include("connection.php");
      $query = "UPDATE users,rooms SET users.RoomNo = '$room', users.BookedDate=current_timestamp, rooms.id_person='$id' WHERE users.ID='$id' and rooms.RoomNo='$room'";
